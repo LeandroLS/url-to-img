@@ -3,3 +3,7 @@ html
         link(rel="stylesheet", href="/main.css")
     body
         h1 Primeira view
+        form(action="/get-image", method="post")
+            label(for="url") URL
+            input(type="text" name="url")
+            button(type="submit") Buscar imagem

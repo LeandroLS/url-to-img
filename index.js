@@ -7,5 +7,8 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.post('/get-image', (req, res) => {
+    res.send('vim aqui');
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
