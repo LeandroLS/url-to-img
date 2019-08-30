@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/LeandroLS/url-to-img#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   }
 }
