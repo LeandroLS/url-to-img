@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/LeandroLS/url-to-img#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "express": "^4.17.1",
-    "html2canvas": "^1.0.0-rc.3",
     "pug": "^2.0.4",
-    "request": "^2.88.0"
+    "webshot": "^0.18.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
