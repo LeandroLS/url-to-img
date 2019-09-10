@@ -10,11 +10,9 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 app.post('/get-image', (req, res) => {
-    webshot(`${req.body.url}`, `./images/${req.body.url}.jpg`, function(err) {
-        if(err){
-            console.log(err);
-        }
-        // res.download(`${req.body.url}`);
+    webshot(`${req.body.url}`, `./public/images/${req.body.url}.jpg`, function(err) {
+        img = `./images/${req.body.url}.jpg`;
+        res.render('index', { img, err });
     });
 });
 

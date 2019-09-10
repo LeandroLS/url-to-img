@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Mallanna', sans-serif;
+    background-color: #fdfaed;
+    color:#595357;
+}
+
+.header {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header:hover{
+    color: #3b3539;
+    border-bottom: #3b3539 3px solid;
+}
+
+.url {
+    display: inline-block;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.url:focus {
+    border: 3px #595357 solid;
+}
+
+.url, button {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.preview-image{
+    border: 3px #837b77 solid;
+}

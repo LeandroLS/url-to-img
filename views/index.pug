@@ -1,9 +1,14 @@
 html
     head
-        link(rel="stylesheet", href="/main.css")
+        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Mallanna&display=swap")
     body
-        h1 Primeira view
-        form(action="/get-image", method="post")
-            label(for="url") URL
-            input(type="text" name="url")
-            button(type="submit") Buscar imagem
+        a(class="header", href="/") Url To Img
+        div
+            form(action="/get-image", method="post")
+                input(type="text" class="url" name="url" placeholder="URL pra ser tirado o printscreen.")
+                button(type="submit") Buscar imagem
+        h2 Preview Imagem
+        div(class="preview-image")
+            if !err && img
+                img(src=img, alt="")
