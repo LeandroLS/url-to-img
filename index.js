@@ -9,11 +9,15 @@ app.use(express.urlencoded());
 app.get('/', (req, res) => {
     res.render('index');
 });
-app.post('/get-image', (req, res) => {
+app.post('/post-image', (req, res) => {
     webshot(`${req.body.url}`, `./public/images/${req.body.url}.jpg`, function(err) {
-        img = `./images/${req.body.url}.jpg`;
+        img = `${req.body.url}.jpg`;
         res.render('index', { img, err });
     });
+});
+
+app.get('/get-image', (req, res) => {
+    res.download('./public/images/' + req.query.img);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

@@ -14,7 +14,6 @@ body {
     display: inline-block;
     margin-bottom: 10px;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .header:hover{
@@ -32,6 +31,14 @@ body {
     border: 3px #595357 solid;
 }
 
+button {
+    background-color: #fdfaed;
+}
+
+button:hover {
+    background-color: #f3e9ba;
+}
+
 .url, button {
     border-radius: 20px;
     padding: 5px;
@@ -39,4 +46,11 @@ body {
 
 .preview-image{
     border: 3px #837b77 solid;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
