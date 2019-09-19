@@ -10,10 +10,13 @@ body {
 }
 
 .header {
-    font-size: 30px;
-    display: inline-block;
-    margin-bottom: 10px;
+    font-size: 24px;
     font-weight: bold;
+}
+
+nav {
+    padding: 8px;
+    margin-bottom: 12px;
 }
 
 .header:hover{
@@ -21,18 +24,26 @@ body {
     border-bottom: #3b3539 3px solid;
 }
 
+.form {
+    padding: 6px;
+    height: 50px;
+}
+
 .url {
     display: inline-block;
     width: 70%;
     margin-right: 10px;
+    border: 1px solid #3b3539;
 }
 
 .url:focus {
-    border: 3px #595357 solid;
+    box-shadow: 0px 0px 2px #3b3539;
 }
 
 button {
     background-color: #fdfaed;
+    border: 1px solid #3b3539;
+    cursor: pointer;
 }
 
 button:hover {
