@@ -21,7 +21,7 @@ nav {
 
 .header:hover{
     color: #3b3539;
-    border-bottom: #3b3539 3px solid;
+    border-bottom: #3b3539 2px solid;
 }
 
 .form {
@@ -52,7 +52,11 @@ button:hover {
 
 .url, button {
     border-radius: 20px;
-    padding: 5px;
+    padding: 12px;
+}
+
+.danger {
+    color: #b33737
 }
 
 .preview-image{

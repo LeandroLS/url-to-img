@@ -18,4 +18,6 @@ html
                 img(src=`\\images\\${img}`, alt="", class="preview-image")
                 a(href=`/get-image?img=${img}`, class="link")
                     button(type="button") Baixar Imagem <i class="fas fa-download"></i>
+        else
+            h3(class="danger") Algo deu errado. Não foi possível buscar a imagem. :(
     script(src="https://kit.fontawesome.com/e97a8e0e5c.js")
