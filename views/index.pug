@@ -1,7 +1,7 @@
 html
     head
         <meta charset="UTF-8">
-        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet", href="/css/style.css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Mallanna&display=swap")
     body
         header
@@ -12,12 +12,12 @@ html
                 div(class="form")
                     input(type="text" class="url" name="url" placeholder="URL pra ser tirado o printscreen.")
                     button(type="submit") Tirar Printscreen <i class="fas fa-camera-retro"></i>
-        h3 Pré Visualização da Imagem
         if !err && img
+            h3 Pré Visualização da Imagem
             div
                 img(src=`\\images\\${img}`, alt="", class="preview-image")
                 a(href=`/get-image?img=${img}`, class="link")
                     button(type="button") Baixar Imagem <i class="fas fa-download"></i>
-        else
+        else if err
             h3(class="danger") Algo deu errado. Não foi possível buscar a imagem. :(
     script(src="https://kit.fontawesome.com/e97a8e0e5c.js")

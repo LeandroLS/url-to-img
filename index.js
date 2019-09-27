@@ -20,4 +20,4 @@ app.get('/get-image', (req, res) => {
     res.download('./public/images/' + req.query.img);
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`url-to-img listening on port ${port}!`));
