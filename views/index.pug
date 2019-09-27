@@ -2,22 +2,25 @@ html
     head
         <meta charset="UTF-8">
         link(rel="stylesheet", href="/css/style.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Mallanna&display=swap")
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     body
         header
             nav
-                a(class="header link", href="/") Url To Img
-        div
+                a(class="brand white", href="/") URL To Image
+        main
+            h1(for="url") Convert Web Page to Image
             form(action="/post-image", method="post")
-                div(class="form")
-                    input(type="text" class="url" name="url" placeholder="URL pra ser tirado o printscreen.")
-                    button(type="submit") Tirar Printscreen <i class="fas fa-camera-retro"></i>
-        if !err && img
-            h3 Pré Visualização da Imagem
-            div
-                img(src=`\\images\\${img}`, alt="", class="preview-image")
-                a(href=`/get-image?img=${img}`, class="link")
-                    button(type="button") Baixar Imagem <i class="fas fa-download"></i>
-        else if err
-            h3(class="danger") Algo deu errado. Não foi possível buscar a imagem. :(
+                input(type="text" name="url" class="form-url" placeholder="Please enter web page URL which you would like to convert, e.g. http://example.com/")
+                button(type="submit") Take Screenshot <i class="fas fa-camera-retro"></i>
+            if !err && img
+                p #{img}
+                h3 Image Preview
+                div
+                    img(src=`\\images\\${img}`, alt="")
+                    a(href=`/get-image?img=${img}`, class="link")
+                        button(type="button") Download Image <i class="fas fa-download"></i>
+            else if err
+                h3 Something went wrong. Could not fetch image. :(
+        footer
+            a(href="", class="white") About
     script(src="https://kit.fontawesome.com/e97a8e0e5c.js")
