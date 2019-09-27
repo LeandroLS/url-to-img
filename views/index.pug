@@ -1,12 +1,16 @@
 html
     head
         <meta charset="UTF-8">
+        title URL To Image
         link(rel="stylesheet", href="/css/style.css")
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     body
         header
             nav
                 a(class="brand white", href="/") URL To Image
+                ul
+                    li
+                        a(class="white", target='_blank' href='https://github.com/LeandroLS/url-to-img') Github
         main
             h1(for="url") Convert Web Page to Image
             form(action="/post-image", method="post")
@@ -22,5 +26,7 @@ html
             else if err
                 h3 Something went wrong. Could not fetch image. :(
         footer
-            a(href="", class="white") About
+            ul
+                li
+                    a(href="https://leandrols.github.io", class="white") Blog
     script(src="https://kit.fontawesome.com/e97a8e0e5c.js")
