@@ -64,7 +64,7 @@ img {
 footer {
     margin-top: 5px;
     background: black;
-    /* position: fixed; */
+    position: relative;
     padding: 18px;
     width: 100%;
     left: 0;
@@ -97,6 +97,12 @@ main h1 {
 a {
     text-decoration: none;
 }
+
+a .button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .white {
     color: white;
 }

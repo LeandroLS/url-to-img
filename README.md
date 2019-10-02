@@ -1,2 +1,2 @@
 # url-to-img
-Get an HTML source and convert to image
+Provide a site and get the site image.
