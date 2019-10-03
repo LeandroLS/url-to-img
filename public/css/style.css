@@ -47,7 +47,7 @@ form .button {
 }
 
 .form-url {
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     border: 1px solid #02467a;
     border-bottom: 3px solid #02467a;
     border-top-left-radius: 5px;
@@ -58,6 +58,7 @@ img {
     margin-bottom: 5px;
     border: 1px solid white;
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.75);
+    width: 100%;
 }
 
 
@@ -67,7 +68,6 @@ footer {
     position: relative;
     padding: 18px;
     width: 100%;
-    left: 0;
     bottom: 0;
 }
 
