@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(154, 212, 250);
 }
 
 main {
@@ -63,7 +64,7 @@ img {
 
 
 footer {
-    margin-top: 5px;
+    margin-top: 12px;
     background: black;
     position: relative;
     padding: 18px;
