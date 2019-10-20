@@ -9,8 +9,15 @@ body {
 }
 
 main {
-    width: 1000px;
+    width: 80vw;
     margin: auto;
+    margin-top: 5.5rem;
+}
+
+
+main h1 {
+    display: inline-block;
+    font-size: 1.3rem;
 }
 
 main h1:hover {
@@ -19,13 +26,14 @@ main h1:hover {
 
 header {
     background: #01579b;
-    padding: 36px;
+    padding: 1rem;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    top:0;
 }
 
 header nav {
-    width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
@@ -39,7 +47,7 @@ header a:hover {
 
 form input, button {
     border: none;
-    padding: 22px;
+    padding: 1.3rem;
 }
 
 form .button {
@@ -48,7 +56,7 @@ form .button {
 }
 
 .form-url {
-    width: calc(100% - 180px);
+    width: calc(100% - 135px);
     border: 1px solid #02467a;
     border-bottom: 3px solid #02467a;
     border-top-left-radius: 5px;
@@ -87,20 +95,12 @@ footer a:hover {
     font-size: 26px;
 }
 
-main {
-    padding-top: 200px;
-}
-
-main h1 {
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
 }
 
-a .button {
-    margin-top: 8px;
+a + .button {
+    margin-top: 0.8rem;
     margin-bottom: 8px;
 }
 
