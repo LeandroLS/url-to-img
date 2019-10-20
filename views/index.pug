@@ -1,5 +1,6 @@
 html
     head
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         <meta charset="UTF-8">
         title URL To Image
         link(rel="stylesheet", href="/css/style.css")
@@ -14,8 +15,8 @@ html
         main
             h1(for="url") Convert Web Page to Image
             form(action="/post-image", method="post")
-                input(type="text" name="url" class="form-url" placeholder="Please enter web page URL which you would like to convert, e.g. http://example.com/")
-                button(type="submit", class="button") Take Screenshot <i class="fas fa-camera-retro"></i>
+                input(type="text" name="url" class="form-url" placeholder="Enter web page URL which you would like to convert, e.g. http://example.com/")
+                button(type="submit", class="button") Screenshot <i class="fas fa-camera-retro"></i>
             h3 Image Preview
             if !err && img
                 div
